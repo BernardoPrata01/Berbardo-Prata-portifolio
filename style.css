@@ -1,0 +1,551 @@
+:root {
+    --fundo: #ffffff;
+    --titulo: #6D001C;
+    --borda: #6D001C;
+}
+
+body.dark-theme {
+    --fundo: #121212;
+    --titulo: #d4033e;
+    --borda: #d4033e;
+}
+
+body {
+    background-color: var(--fundo);
+    transition: background-color 0.4s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+}
+
+header {
+    background-color: #6D001C;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+
+}
+button img{
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+}
+button{
+    background-color: #6b001e;
+    border-style: none;
+}
+
+button:hover{
+    color: var(--fundo);
+}
+
+header a {
+    color: white;
+    font-size: 1.3em;
+}
+
+li{
+    list-style: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    padding-bottom: 10%;
+
+}
+
+.traço {
+    width: 100%;
+    height: 3px;
+    background-color: #6D001C
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    transition: 1s;
+    transform: translateY(-5px);
+    color: rgb(173, 173, 173);
+    text-decoration: underline;
+}
+
+#logoArea {
+    border-style: solid;
+    border-color: var(--borda);
+    width: 100%;
+
+}
+
+.Sobre_mim {
+    border-style: solid;
+    border-color: var(--borda);
+    width: 100%;
+    height: 60em;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.Sobre_mim_div {
+    width: 40%;
+    height: 85vh;
+    background-color: #6D001C;
+    border-radius: 10%;
+
+    position: absolute;
+}
+
+.Sobre_mim_div h1 {
+    color: white;
+    font-size: 4.2em;
+    margin-left: 30.5%;
+    margin-top: 5%;
+}
+
+.linha-div {
+    border: solid 1px;
+    color: white;
+    margin-top: 5%;
+
+}
+
+.foto_de_perfil {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.foto_de_perfil img {
+    object-fit: cover;
+    border-radius: 10%;
+    height: 40vh;
+    width: 30vh;
+    border: solid 1px #ffffff;
+    margin: 5%;
+
+}
+
+.foto_de_perfil h4 {
+    margin-right: 3%;
+    color: white;
+
+}
+
+.projetos {
+    border-style: solid;
+    border-color: var(--borda);
+    width: 100%;
+    height: 120vh;
+
+}
+
+.header_projetos {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.header_projetos h1 {
+    color: var(--titulo);
+    font-size: 9vh;
+}
+
+.tabela_e_ladin {
+    width: 100%;
+    height: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tabela {
+    width: 30%;
+    height: 60%;
+    background-color: #6D001C;
+    border-radius: 12%;
+    color: white;
+    font-size: 1.9em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tabela img {
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tabela h1 {
+    margin-top: 6%;
+    margin-bottom: 10vh;
+}
+
+
+
+.ladin {
+    width: 30%;
+    height: 60%;
+    background-color: #6D001C;
+    border-radius: 12%;
+    color: white;
+    font-size: 1.9em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.ladin img{
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ladin h1 {
+    margin-top: 6%;
+    margin-bottom: 10vh;
+}
+
+
+
+#Skills {
+    border-style: solid;
+    border-color: var(--borda);
+    width: 100%;
+    height: 150vh;
+
+}
+
+.habilidades {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.materias {
+    width: 30%;
+    height: 88%;
+    background-color: #6D001C;
+    border-radius: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.materias li {
+    color: white;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    padding-left: 10%;
+}
+
+.habilidades h1 {
+    color: var(--titulo);
+    font-size: 4.5em;
+    text-decoration: underline 2px;
+    margin-right: 13%;
+}
+
+.minhas_redes {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.minhas_redes h1 {
+    color: var(--titulo);
+    font-size: 4.5em;
+    text-decoration: underline 2px;
+    margin-left: 7%;
+    text-align: center;
+}
+.email{
+    width: 100%;
+    height: 25%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    
+}
+.email li{
+    font-size: 2.6em;
+    font-weight: 800;
+    margin-left: 3%;
+}
+.redes_sociais {
+    width: 30%;
+    height: 88%;
+    background-color: #6D001C;
+    border-radius: 8%;
+}
+.github{
+    color: white;
+    font-weight: 800;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 3em;
+    height: 37.5%;
+    object-fit: cover;
+}
+.linked{
+    color: white;
+    font-weight: 800;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 3em;
+    height: 37.5%;
+    object-fit: cover;
+}
+
+
+
+
+#Contato {
+    border-style: solid;
+    border-color: var(--borda);
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.contato {
+    width: 80%;
+    margin: 0 auto;
+    background: #6b001e;
+    color: #fff;
+    border-radius: 1.2cqw;
+    overflow: hidden;
+    font-family: "Rozha One", serif;
+  }
+  
+  .contato__form {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    grid-template-areas:
+      "titulo  titulo"
+      "nome    assunto"
+      "email   assunto"
+      "enviar  enviar";
+    column-gap: 5cqw;
+    row-gap: 2cqw;
+    padding: 1.5cqw 3cqw 2.5cqw;
+  }
+  
+  .contato__titulo {
+    grid-area: titulo;
+    font-weight: 400;
+    font-size: 4cqw;
+    line-height: 1.1;
+    margin-left: 0.5cqw;
+  }
+  
+  .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4cqw;
+  }
+  
+  .campo--nome    { grid-area: nome; }
+  .campo--email   { grid-area: email; }
+  .campo--assunto { grid-area: assunto; }
+  
+  .campo label {
+    font-size: 1.7cqw;
+    margin-left: 1cqw;
+  }
+  
+  .campo input,
+  .campo textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #333;
+    font-family: inherit;
+    font-size: 1.6cqw;
+    padding: 0 1.5cqw;
+    border-radius: 1.8cqw;
+  }
+  
+  .campo input {
+    height: 5cqw;
+  }
+  
+  .campo--assunto textarea {
+    flex: 1;
+    padding: 1.5cqw;
+    resize: none;
+    width: 90%;
+    height: 25%;
+  }
+  
+  .campo input:focus,
+  .campo textarea:focus {
+    box-shadow: 0 0 0 0.3cqw rgba(255, 255, 255, 0.45);
+  }
+  
+  .contato__enviar {
+    grid-area: enviar;
+    margin: 0 1.5cqw;
+    height: 2.4cqw;
+    min-height: 18px;
+    border: none;
+    border-radius: 999px;
+    background: #fff;
+    color: #6b001e;
+    font-family: inherit;
+    font-size: 1.3cqw;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .contato__enviar:hover {
+    background: #f0d6dd;
+  }
+  
+  .contato__telefone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3cqw;
+    padding: 2.5cqw 5cqw;
+    border-top: 1px solid rgba(255, 255, 255, 0.55);
+  }
+  
+  .contato__telefone svg {
+    width: 5cqw;
+    height: 5cqw;
+    fill: #fff;
+  }
+  
+  .contato__telefone svg .onda {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+  }
+  
+  .contato__telefone span {
+    font-size: 4.2cqw;
+    letter-spacing: 0.05em;
+  }
+  
+  @media (max-width: 600px) {
+    .contato {
+      width: 100%;
+      border-radius: 12px;
+    }
+  
+    .contato__form {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "titulo"
+        "nome"
+        "email"
+        "assunto"
+        "enviar";
+      row-gap: 14px;
+      padding: 16px;
+    }
+  
+    .contato__titulo { font-size: 32px; }
+    .campo label { font-size: 16px; }
+    .campo input { height: 44px; font-size: 16px; border-radius: 14px; padding: 0 14px; }
+    .campo--assunto textarea { min-height: 120px; font-size: 16px; border-radius: 14px; padding: 12px; }
+    .contato__enviar { height: 36px; font-size: 14px; margin: 0; }
+    .contato__telefone { padding: 16px; gap: 16px; }
+    .contato__telefone svg { width: 36px; height: 36px; }
+    .contato__telefone span { font-size: 28px; }
+  }
+  footer{
+    width: 100%;
+    color: white;
+    background-color: #6b001e;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    font-size: 2em;
+  }
+
+  #cursor {
+    width: 36px;
+    height: 36px;
+    position: fixed;
+    pointer-events: none;
+    z-index: 99;
+    opacity: 0;
+    margin: -25px 0 0 -25px;
+    border-radius: 50%;
+    border: solid 2px var(--borda);
+    top: 0;
+    left: 0;
+
+    transition: 0.25s;
+
+    :hover {
+        box-shadow: 0 15px 36px -10px var(--corSombraFoto);
+    }
+
+    .pontoFlutuante {
+        transition: transform.25s, background.25s;
+
+        :hover {
+            transform: scale(1.08);
+            background: transparent;
+        }
+    }
+}
+
+@media(pointer:coarse) {
+    #cursor {
+        display: none;
+    }
+}
+  
